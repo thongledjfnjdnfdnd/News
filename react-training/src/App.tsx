@@ -24,11 +24,11 @@ function App() {
     <>
       <Header isHeaderLineDashboard={false} />
       <Dashboard />
-      <Routes>
-        {/* <Route path={Path.DASHBOARD} element={<Dashboard />}></Route>*/}
+      {/* <Routes>
+        <Route path={Path.DASHBOARD} element={<Dashboard />}></Route>
         <Route path={`${Path.DETAILS}-${Path.DETAILS_POST}`} element={<Details />}></Route>
         <Route path={`${Path.SEARCH}-:queryParam`} element={<Category />}></Route>
-      </Routes>
+      </Routes> */}
       {randomNews && <Footer categoryData={randomNews} />}
     </>
   )
