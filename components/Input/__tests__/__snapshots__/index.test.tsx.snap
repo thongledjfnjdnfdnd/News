@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test [Input] component Component [Input] matches DOM Snapshot 1`] = `
+<div
+  className="flex flex-col m-3"
+>
+  <div>
+    <label
+      className="block text-gray-700 text-md font-bold"
+      htmlFor="meetup-name"
+    >
+      Meetup Name
+    </label>
+    <input
+      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+      id="meetup-name"
+      name="meetup-name"
+      onChange={[MockFunction]}
+      placeholder="Please enter Meetup Name."
+      type="text"
+      value="Meetup"
+    />
+  </div>
+  <small
+    className="p-1 text-white text-md rounded bg-red-600 "
+  >
+    error
+  </small>
+</div>
+`;
+
+exports[`Test [Input] component Component [Input] with default value 1`] = `
+<div
+  className="flex flex-col m-3"
+>
+  <div>
+    <label
+      className="block text-gray-700 text-md font-bold"
+    />
+    <input
+      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+      placeholder="Please enter something."
+    />
+  </div>
+</div>
+`;
