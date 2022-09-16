@@ -39,11 +39,10 @@ const Category = () => {
   const dataEntertainment = fetchDataByNewsTypes(NEWS_ENTERTAINMENT)
 
   const getPages = () => {
-    // setTotalPage(abc && abc.length / 8 + 1)
     const elements = []
     for (let i = 0; abc && i <= abc.length / 8; i++) {
       elements.push(
-        <li className='page-item' onClick={(() => setPageIndex(i + 1))}>
+        <li className='page-item' onClick={() => setPageIndex(i + 1)}>
           <a className='page-link' href='#'>
             {i + 1}
           </a>
@@ -60,10 +59,7 @@ const Category = () => {
           {searchNews ? <Search searchNews={searchNews} /> : <Search searchNews={searchByTag} />}
           <nav aria-label='Page navigation example'>
             <ul className='pagination justify-content-center'>
-              <li
-                className='page-item'
-                onClick={() => setPageIndex(pageIndex - 1)}
-              >
+              <li className='page-item' onClick={() => setPageIndex(pageIndex - 1)}>
                 <a
                   className={`page-link ${pageIndex === 1 ? 'disabled' : ''}`}
                   href='#'
